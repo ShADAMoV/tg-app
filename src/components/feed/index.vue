@@ -22,9 +22,13 @@
 
 
 <script setup lang="ts">
-import type {Feed} from "@/types/feed.interface.ts"
-import {FeedStatus} from "@/types/feed-status.enum.ts";
 import FeedItem from "@/components/feed-item/index.vue";
+
+import type { Feed } from "@/types/feed.interface.ts"
+import { FeedStatus } from "@/types/feed-status.enum.ts";
+
+import feedAvatar from '@/assets/feed-avatar.png'
+
 
 defineOptions({
   name: 'FeedComponent'
@@ -34,42 +38,42 @@ const feedItems: Feed[] = [
   {
     username: '@userName1',
     status: FeedStatus.WINNING,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName2',
     status: FeedStatus.FAILED,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName3',
     status: FeedStatus.FAILED,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@veryLongUserName',
     status: FeedStatus.FAILED,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName5',
     status: FeedStatus.FAILED,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName7',
     status: FeedStatus.WINNING,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName8',
     status: FeedStatus.FAILED,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
   {
     username: '@userName9',
     status: FeedStatus.WINNING,
-    avatar: 'src/assets/feed-avatar.png'
+    avatar: feedAvatar,
   },
 ]
 
