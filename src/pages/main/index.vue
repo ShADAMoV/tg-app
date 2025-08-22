@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <background-lightning></background-lightning>
-    <feed-component></feed-component>
-    <nav-component></nav-component>
+    <background-lightning />
+    <feed-component />
+    <nav-component />
   </div>
 </template>
 

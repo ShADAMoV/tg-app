@@ -52,7 +52,7 @@
     }
 
     &--bottom {
-      bottom: -52px;
+      bottom: 0;
     }
   }
 </style>
