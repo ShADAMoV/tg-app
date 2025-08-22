@@ -9,7 +9,7 @@
         <div class="reward-list__prize-separator">|</div>
 
         <div class="reward-list__prize-price">
-          {{ rewardsPrice }}
+          {{ rewardsPrice.toFixed(2) }}
           <span>TON</span>
         </div>
       </div>
@@ -55,14 +55,14 @@
   })
 
   const isRewardSelected = (reward: Reward) => {
-    return props.selectedRewards.some((r) => r.image === reward.image)
+    return props.selectedRewards.some((r) => r.id === reward.id)
   }
 
   const toggleReward = (reward: Reward) => {
     if (!props.selectionMode) return
 
     const newSelected = isRewardSelected(reward)
-      ? props.selectedRewards.filter((r) => r.image !== reward.image)
+      ? props.selectedRewards.filter((r) => r.id !== reward.id)
       : [...props.selectedRewards, reward]
 
     emit('update:selectedRewards', newSelected)

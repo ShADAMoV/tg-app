@@ -73,26 +73,62 @@
 
   const rewards: Reward[] = [
     {
+      id: 1,
       image: reward1,
       price: 1.5,
     },
     {
+      id: 2,
       image: reward2,
       price: 1.7,
     },
     {
+      id: 3,
       image: reward3,
       price: 2.1,
     },
     {
+      id: 4,
       image: reward4,
       price: 4.1,
     },
     {
+      id: 5,
       image: reward5,
       price: 7.2,
     },
     {
+      id: 6,
+      image: reward6,
+      price: 4.7,
+    },
+    {
+      id: 7,
+      image: reward1,
+      price: 1.5,
+    },
+    {
+      id: 8,
+      image: reward2,
+      price: 1.7,
+    },
+    {
+      id: 9,
+      image: reward3,
+      price: 2.1,
+    },
+    {
+      id: 10,
+      image: reward4,
+      price: 4.1,
+    },
+    {
+      id: 11,
+      image: reward5,
+      price: 7.2,
+    },
+    {
+      id: 12,
       image: reward6,
       price: 4.7,
     },
